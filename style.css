@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #ffffff, #38b6ff);
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo span{
+    color: rgb(19, 68, 194);
+    text-shadow: 0 0 10px rgb(19, 68, 194);
+}
+
+.hamburg, .cancel{
+    cursor: pointer;
+    position:absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+
+.nav-container .links{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 10%;
+    background-color: rgb(19, 68, 194);
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .contact-btn{
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 35px;
+    border: 3.5px solid rgb(19, 68, 194);
+    transition: 0.2s linear;
+}
+
+.nav-container .contact-btn a{
+    color: white;
+    transition: 0.3s linear;
+}
+
+.nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
+    background-color: rgb(19, 68, 194);
+    color: white;
+}
+
+.nav-container .links a:hover{
+    color: rgb(19, 68, 194);
+}
