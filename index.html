@@ -1,60 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Portofolio Rian</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Adrian</title>
+
+  <!-- Font & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <span>Rian</span>
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About Me</a></div>
-                <div class="link"><a href="#">Project</a></div>
-                <div class="link"><a href="#">Achievement</a></div>
-                <div class="link contact-btn"><a href="#">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg"></i>
+    
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="Adrian Logo">
+    </div>
+
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About Me</a></div>
+        <div class="link"><a href="#projects">My Projects</a></div>
+        <div class="link contact-btn"><a href="#achievement-contact">Contact</a></div>
+      </div>
+
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image">
+        <!-- ganti src sesuai file aslimu -->
+        <img src="pfo.png" alt="Profile Picture">
+      </div>
+
+      <div class="content">
+        <h1>HEY I'M <span>Adrian Anis Pratama</span></h1>
+        <div class="typewriter">I'm a <span></span></div>
+        <p>Hello! I am a university student with a strong interest in programming and prototype design. I enjoy learning new things independently, especially in the areas of coding, UI/UX, and problem-solving.</p>
+
+        <div class="social-links">
+          <a href="https://github.com/AdrianAnis"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/_riann06/"><i class="fa-brands fa-instagram"></i></a>
         </div>
 
-        <!-- Dropdown -->
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About Me</a>
-                <a href="">Project</a>
-                <a href="">Achievement</a>
-                <a href="">Contact</a>
-                <i class="fa-solid fa-xmark cancel"></i>
-            </div>
-        </div>
-    </nav>
+        <div class="btn">
+            <a href="https://drive.google.com/file/d/1xPxAr7zVi8NXJtyWa2Op4hbxaXfoXdTh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-cv">
+        View CV
+        </a>
+</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section>
-        <div class="main-container">
-            <img src="pfo.png" alt="Profile Picture">
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="intro">
+      Hello! I'm <span>Adrian Anis Pratama</span>. I am a Computer Science student passionate about coding, UI/UX design, and problem-solving. I enjoy learning new things independently and applying them in creative ways. Currently, I am an undergraduate (S1) student at Telkom University majoring in Informatics.
+    </p>
+
+    <div class="about-container">
+      <!-- Personal Details -->
+      <div class="personal-details">
+        <h3>Personal Details</h3>
+        <p><strong>Birthdate:</strong> 29-06-2006</p>
+        <p><strong>Phone:</strong> +62 82187003476</p>
+        <p><strong>Email:</strong> adriananis06@gmail.com</p>
+        <p><strong>Address:</strong> Bandung, Indonesia</p>
+        <p><strong>Status:</strong> <span class="highlight">Student</span></p>
+      </div>
+
+      <!-- My Interests -->
+      <div class="interests">
+        <h3>My Interests</h3>
+        <div class="interest-list">
+          <div class="interest"><i class="fa-solid fa-gamepad"></i> Games</div>
+          <div class="interest"><i class="fa-solid fa-music"></i> Music</div>
+          <div class="interest"><i class="fa-solid fa-film"></i> Movie</div>
+          <div class="interest"><i class="fa-solid fa-code"></i> Coding</div>
         </div>
-        <div class="content">
-            <h1>Hey I'm <span>Rian</span></h1>
-            <div class="typewrite">I'm a <span></span></div>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-line"></i></a>
-            </div>
-            <div class="btn">
-                <button>Download CV</button>
-            </div>
+      </div>
+    </div>
+
+    <!-- Skills (centered) -->
+    <div class="skills">
+      <h3>My Skills</h3>
+      <div class="skill-list">
+        <div class="skill"><i class="fa-brands fa-golang"></i> Golang</div>
+        <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fa-solid fa-code"></i> C++</div>
+        <div class="skill"><i class="fa-brands fa-figma"></i> Figma</div>
+        <div class="skill"><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="skill"><i class="fa-brands fa-css3"></i> CSS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-list">
+      <!-- 1 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="T1.png" alt="Alpro Project 1 - Screenshot 1">
+          <img src="T2.png" alt="Alpro Project 1 - Screenshot 2">
+          <img src="t3.png" alt="Alpro Project 1 - Screenshot 3">
         </div>
-    </section>
+        <h3>Final Project of Alpro 2</h3>
+        <p>Esport Tournament Management System Based on Golang for Data Processing.</p>
+        <a href="https://github.com/AdrianAnis/tubes_Alpro.git" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="EEDUKA.png" alt="EDUKA Screenshot">
+        </div>
+        <h3>EDUKA UI/UX</h3>
+        <p>Eduka Application Prototype, Helping Users Simplify Learning.</p>
+        <a href="https://www.figma.com/proto/vEvTAUu8ed6FmhAhqRpE6U/DESIGN-ICONIC" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="DRESSY.png" alt="Dressy Screenshot">
+        </div>
+        <h3>Dressy UI/UX</h3>
+        <p>Dressy Application Prototype, Helping Users Determine Clothing Size.</p>
+        <a href="https://www.figma.com/proto/bMqetS7EbPGOT92gYkwcv4/DESIGN" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="Traveler.png" alt="Traveler Screenshot">
+        </div>
+        <h3>Traveler UI/UX</h3>
+        <p>Traveler Application Prototype, Helping Users Plan Their Vacation.</p>
+        <a href="https://www.figma.com/proto/vEvTAUu8ed6FmhAhqRpE6U/DESIGN-ICONIC" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="Jobify.png" alt="Jobify Screenshot">
+        </div>
+        <h3>Jobify UI/UX</h3>
+        <p>Jobify Prototype, Helping Users Find Jobs and Training.</p>
+        <a href="https://www.figma.com/proto/8rEJcU2t4MHdxzwyvmIyQX/DESIGN-ANFORCOM" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+
+      <!-- 6 -->
+      <div class="project-card">
+        <div class="project-slider">
+          <img src="CAL1.png" alt="Calculator Screenshot">
+        </div>
+        <h3>Project Calculator</h3>
+        <p>Simple Calculator Using C++ for Basic Operations.</p>
+        <a href="https://github.com/AdrianAnis/Projek-sederhana-rian.git" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+
+<section id="achievement-contact">
+  <h2 class="section-title">Achievement & Contact</h2>
+  
+  <!-- Row Achievement -->
+  <div class="achievement-row">
+    <div class="achievement-card">
+      <img src="Juara1.png" alt="Juara 1" class="ach-img">
+      <h3>1st Place Winner UI/UX Infornation Competition 2025</h3>
+      <p>Winner of 1st Place in the Information UI/UX Competition 2025 Organized by the University of Mataram</p>
+    </div>
+    <div class="achievement-card">
+      <img src="Juara2.png" alt="Hackathon Finalist" class="ach-img">
+      <h3>2nd Place Winner of the UI/UX Anforcom</h3>
+      <p>Winner of 2nd Place in the Anforcom UI/UX Competition 2025 Organized by Diponegoro University</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-wrapper">
+    <div class="contact-card">
+        <h3>Contact Me</h3>
+      <p>Email: adriananis06@gmail.com</p>
+      <p>Phone: +62 62187003476</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- small scripts -->
+  <script>
+    function hamburg(){
+      document.querySelector(".dropdown").style.transform = "translateY(0)";
+    }
+    function cancel(){
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+  </script>
+
+  <footer>
+  <p>© 2025 Adrian | Front-End Developer & UI/UX Enthusiast</p>
+</footer>
+
 </body>
 </html>
