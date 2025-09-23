@@ -364,6 +364,7 @@ section{
   background: rgb(19,68,194);
   color: white;
   box-shadow: 0 0 10px rgb(19,68,194);
+  scale: 1.1;
 }
 
 
@@ -493,6 +494,7 @@ section {
   background: rgb(19, 68, 194);
   color: #fff;
   filter: drop-shadow(0 0 10px rgb(19, 68, 194));
+  scale: 1.08;
 }
 
 .interest:hover i {
@@ -559,6 +561,7 @@ section {
 .skill:hover {
   background: rgb(19, 68, 194);
   color: #fff;
+  scale: 1.08;
 }
 
 .skill:hover i {
