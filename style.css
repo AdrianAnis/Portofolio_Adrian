@@ -147,7 +147,7 @@ nav {
 
 /* Hero Section */
 section{
-    padding-top: 100px;
+    padding-top: 40px;
   width: 100%;
   height: 90vh;
 }
@@ -372,6 +372,12 @@ section{
   height: 150px;   
   width: auto;    
 }
+@media (max-width: 768px) {
+  .logo img {
+    height: 60px; 
+    padding-top: 5px;
+  }
+}
 
 .content p {
     font-size: clamp(1rem, 0.8rem + 1vw, 0.5rem); 
@@ -380,9 +386,20 @@ section{
     line-height: 1.8; 
 }
 
+section {
+  min-height: 30vh;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .achievement-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 #about {
   min-height: 100vh;
-  padding: 150px 10%;
+  padding: 100px 10%;
   background: linear-gradient(to left, #ffffff, #38b6ff);
   color: #000;
 }
@@ -612,7 +629,7 @@ html {
 
 /* Section wrapper */
 #achievement-contact {
-  margin-top: 500px;
+  margin-top: 50px;
   padding: 60px 0;
   width: 90%;
   max-width: 1200px;
